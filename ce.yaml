@@ -1,0 +1,18 @@
+builds:
+  # Community build
+  - name: "community"
+    descriptor: "image.yaml"
+ 
+  # Product build
+  - name: "product"
+    descriptor: "image.yaml"
+    overrides:
+      - "product-overrides.yaml"
+ 
+  # Custom build, that is not enabled on CI
+  - name: "custom-jdk"
+    enabled: false
+    descriptor: "image.yaml"
+    overrides:
+      - "product-overrides.yaml"
+      - "optional.yaml"
