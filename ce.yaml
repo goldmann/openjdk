@@ -2,6 +2,7 @@ builds:
   # Community build
   - name: "community"
     descriptor: "image.yaml"
+    product: false
  
   # Product build
   - name: "product"
